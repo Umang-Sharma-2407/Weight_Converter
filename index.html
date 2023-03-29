@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <!-- <style>
+         *{background-color: white;
+            } 
+    </style> -->
+    <script>
+        function Converter(){
+            let K = document.getElementById("kg").value;
+            let pounds = document.getElementById("p").value = K * 2.2046;
+            let miligram = document.getElementById("mil").value = K * 1000000;
+            let ton = document.getElementById("ton").value = K * 0.0011023;
+            let Ounce = document.getElementById("o").value = K * 35.274;
+        }
+    </script>
+
+</head>
+<body>
+    <center>
+    <table border="7" width="500" height="350" id="tab" style="background-color:darkseagreen">
+        <form>
+           
+                <tr>
+                    <th colspan="2">WELCOME TO ONLINE WEIGHT CONVERTER</th>
+                </tr>
+                <tr>
+                  <td>Kilogram :</td>
+                  <td><input type="text" id="kg">
+                  <input type="button" id="butt" value="Submit" onclick="Converter()"></td> 
+                </tr>
+                <tr>
+                    <td>Pounds :</td>
+                    <td><input type="text" id="p"></td>
+                </tr>
+                <tr>
+                    <td>Miligram :</td>
+                    <td><input type="text" id="mil"></td>
+                </tr>
+                <tr>
+                    <td>Ton :</td>
+                    <td><input type="text" id="ton"></td>
+                </tr>
+                <tr>
+                    <td>Ounce :</td>
+                    <td><input type="text" id="o"></td>
+                </tr>
+            
+        </form>
+    </table>
+</center>
+</body>
+</html>
